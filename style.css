@@ -3,23 +3,75 @@ body {
   font-family:sans-serif, 'Arial';
   margin: 0;
   padding: 0; /* Or a darker color of your choice */
-  color: #000; /* Light text for contrast */
+  color: #051F20;/* Light text for contrast */
   line-height: 1.6;
+  background:#DAF1DE;
 }
-
+#about{
+  background: #8EB69B;
+}
 .images{
-  width:250px;
-  height:150px;
+  width:750px;
+  height:450px;
   display:inline;
 
 }
+
+.current{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #DAF1DE;
+  border: 1px solid #051F20;
+}
+#cur1{
+  background: #000;
+}
+#img2{
+  display: none;
+}
+.slide{
+  position: relative;
+  width:750px;
+  height:450px;
+  left:235px;
+}
+/* Project Section */
+#projects .project-card {
+  background-color: #DAF1DE;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions */
+}
+
+/* Contact Section */
+#contact {
+  background: #8EB69B;
+}
+#contact a{
+  font-weight: bold;
+}
+#contact a {
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.0rem;
+  color: #051F20;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+#contact a:hover {
+  color: #DAF1DE;
+  cursor: pointer;
+}
+
 p{
   display:block;
 }
 /* Navigation Bar */
 nav {
-  background-color: #333;
-  color: #333;
+  background-color: #0B2B26;
+  color: #051F20;
   padding: 1rem 0;
   position: fixed;
   width: 100%;
@@ -46,7 +98,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffcc00; /* Example hover color */
+  color: #DAF1DE; /* Example hover color */
 }
 
 /* Sections (About, Projects, Contact) */
@@ -57,31 +109,13 @@ section {
 }
 
 h2 {
-  color: #333;
+  color: #051F20;
   margin-bottom: 2rem;
-}
-
-/* Project Section */
-#projects .project-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions */
-}
-
-#projects {
-  background-color: #fff;
-}
-
-/* Contact Section */
-#contact {
-  background-color: #f9f9f9;
 }
 
 /* Footer */
 footer {
-  background-color: #333;
+  background-color: #0B2B26;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
@@ -135,13 +169,6 @@ body {
 }
 
 /* Contact Section Icons */
-#contact a {
-  display: inline-block;
-  margin: 0 1rem;
-  font-size: 1.5rem; /* Adjust icon size as needed */
-  color: #333;
-  transition: color 0.3s ease, transform 0.3s ease; /* Add transitions */
-}
 .icons{
   width:22px;
   height:22px;
@@ -153,23 +180,18 @@ body {
   display:inline;
   text-align:left;
 }
-#contact a:hover {
-  color: #ffcc00;
-  transform: translateY(-3px);
-}
 #snake{
   all:unset;
   text-decoration:none;
   display: inline-block;
   margin: 0 1rem;
   font-size: 1.5rem; 
-  color: #333;
+  color: #051F20;
   transition: color 0.3s ease, transform 0.3s ease; 
   cursor:pointer;
 }
 #snake:hover{
-  color: #ffcc00;
-  transform: translateY(-5px);
+  color: #8EB69B;
 }
 /* Project Card Hover Effect */
 #projects .project-card:hover {
@@ -195,3 +217,24 @@ nav a[href^="#"] {
 }
 
 /* ... add more styles or customize existing ones as needed ... */
+#snake_feature{
+  position: relative;
+  top: 20px;
+  margin-bottom: 40px;
+}
+.slide_buttons{
+  background: #8EB69B;
+  border: none;
+  margin-right:50px;
+  margin-left:50px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.slide_buttons:hover{
+  background: #0B2B26;
+  color: #DAF1DE;
+  
+}

@@ -23,21 +23,25 @@
   </section>
   <main>
     <section id="projects">
-      <h2>Projects</h2>
+      <h1>Projects</h1>
       <div class="project">
         <h3><a href="Snake/index.html" id="snake" class="project_title">Snake(My version)</a></h3>
           <section id="featured-project">
             <div class="featured-content">
               <p>My first ever project, Snake Game, was built using pure HTML, CSS and javascript </p>
-              <img src="Snake/Capture2.PNG" class="images"> 
-              <img src="Snake/Capture.PNG" class="images"> 
+              <div class="slide">
+                <img src="Snake/Capture2.PNG" id = "img1" class="images"> 
+                <img src="Snake/Capture.PNG" id = "img2" class="images"> 
+                <button class = "slide_buttons" id="previous" onclick="slide('previous')"><</button>
+                <div class = "current" id="cur1"></div>
+                <div class = "current" id="cur2"></div>
+                <button class = "slide_buttons" id = "next"  onclick="slide('next')"> > </button>
+              </div>
               <p>
-                <strong>It Features:</strong>
-                <ul class="snake_features">
-                  <li>Classic snake gameplay</li>
-                  <li>Different difficulty levels</li>
-                  <li>Score tracking</li>
-                </ul>
+                <h4 id="snake_feature">It Features:</h4>
+                  Classic snake gameplay
+                  Different difficulty levels
+                  Score tracking
               </p>
               <p>This project was a great learning experience, introducing me to game development concepts and object-oriented programming.</p>
             </div>
@@ -47,14 +51,14 @@
     <section id="contact">
       <h2>Contact</h2>
       <h3>Socials:</h3>
-      <img class="icons" src="instagram.png"><p class="info"> @DivineStil</p>
-      <img class="icons" src="phone-call.png"><p class="info">+251 712467110</p>
-      <img class="icons" src="telegram.png"><p class="info">@DivineStil</p>
+      <img class="icons" src="instagram.png"><a class="info"> @DivineStil</a>
+      <img class="icons" src="phone-call.png"><a class="info">+251 712467110</a>
+      <img class="icons" src="telegram.png"><a class="info">@DivineStil</a>
     </section>
   </main>
 
   <footer>
-    <p> &copy; Milky Daniel-2007</p>
+    <p> &copy; Milky Daniel-2024</p>
   </footer>
 
   <script defer type="text/javascript" src="main.js"></script>
