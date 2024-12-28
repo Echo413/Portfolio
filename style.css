@@ -113,7 +113,6 @@ h2 {
   margin-bottom: 2rem;
 }
 
-/* Footer */
 footer {
   background-color: #0B2B26;
   color: #fff;
@@ -124,26 +123,8 @@ footer {
   width: 100%;
 }
 
-/* Responsive Design */
-@media (max-width: 256px) {
-  #about{
-    margin-top:75px;
-  }
-  nav ul {
-    text-align: left; /* Align nav items to the left on smaller screens */
-  }
-  
-  nav li {
-    display: block; /* Stack nav items vertically */
-    margin: 0.5rem 0;
-  }
-  #profile-title{
-    text-align:center;
-  }
-  #profile-description{
-    text-align:center;
-  }
-}
+
+
 .profile{
   width:125px;
   height:125px;
@@ -160,7 +141,7 @@ footer {
   display:block;
   text-align:left;
 }
-/* Background Image */
+
 body {
   background-image: url("https://source.unsplash.com/random/1920x1080/?technology,code"); /* Example background image */
   background-size: cover;
@@ -238,3 +219,35 @@ nav a[href^="#"] {
   color: #DAF1DE;
   
 }
+
+@media (max-width: 256px) {
+  #about{
+    margin-top:75px;
+  }
+  nav ul {
+    text-align: left;
+  }
+  
+  nav li {
+    display: block; 
+    margin: 0.5rem 0;
+  }
+  #profile-title{
+    text-align:center;
+  }
+  #profile-description{
+    text-align:center;
+  }
+  .images{
+    height: 50px;
+    width: 256px;
+
+  }
+}
+@media (max-width: 356px){
+  .images{
+    height: 150px;
+    width: 256px;
+
+  }
+} 
