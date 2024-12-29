@@ -2,22 +2,99 @@
 body {
   font-family:sans-serif, 'Arial';
   margin: 0;
-  padding: 0; /* Or a darker color of your choice */
-  color: #051F20;/* Light text for contrast */
+  padding: 0; 
+  color: #05161A;
   line-height: 1.6;
-  background:#DAF1DE;
+  background: #000;
+  overflow-x: hidden;
 }
 #about{
-  background: #8EB69B;
+  background: url("images/profile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 80%;
+  height: 500px;
+  border-radius: 15px;
+  margin-left: 100px;
+  margin-top: 125px;
 }
-#skills_title{
+#skills{
+  position: relative;
+  width: 35%;
+  height: 200px;
+  left: 59%;
+  background: #8EB69B;
+  bottom: 228px;
+  border-radius: 15px;
+}
+#unity{
+  position: sticky;
+  width: 100%;
+  height: 250px;
+  background: url("images/unity.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  
+}
+#unity-title{
+  color: #DAF1DE;
   text-align: center;
+  font-size: 3.4rem;
+  position: sticky;
+  text-shadow: 0 0 0 5px #000, 0 0 0 15px #000, 0 0 0 25px #000;
+}
+#icons{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  align-content: left;
+  right: 45%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+#game-dev{
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  height: 100px;
+  background: #111;
+  color: #fff;
+}
+.profile2{
+  width:125px;
+  height:125px;
+  display:inline;
+  position: absolute;
+  right: 175px;
+  margin:10px;
+}
+.icons2{
+  width:50px;
+  height:50px;
+  display:inline;
+  margin:3px;
+  transform: translateY(10px);
+}
+.info2{
+  display:inline-block;
+  text-align:left;
+  font-size: 1.2rem;
 }
 .images{
   width:750px;
   height:450px;
   display:inline;
 
+}
+#projects_title{
+  color: #DAF1DE;
 }
 #programming{
   position: relative;
@@ -52,12 +129,13 @@ body {
   border: 1px solid #ddd;
   padding: 2rem;
   margin-bottom: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 /* Contact Section */
 #contact {
-  background: #8EB69B;
+  background: #111;
 }
 #contact a{
   font-weight: bold;
@@ -66,8 +144,14 @@ body {
   display: inline-block;
   margin: 0 1rem;
   font-size: 1.0rem;
-  color: #051F20;
+  color: #8EB69B;
   transition: color 0.3s ease, transform 0.3s ease;
+}
+#contact h2{
+  color: #fff;
+}
+#contact h3{
+  color: #DAF1DE;
 }
 #contact a:hover {
   color: #DAF1DE;
@@ -79,13 +163,13 @@ p{
 }
 /* Navigation Bar */
 nav {
-  background-color: #0B2B26;
+  background-color: #051F20;
   color: #051F20;
   padding: 1rem 0;
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 10; /* Ensure nav is on top */
+  z-index: 10; 
 }
 
 nav ul {
@@ -103,17 +187,15 @@ nav li {
 nav a {
   text-decoration: none;
   color: #fff;  
-  transition: color 0.3s ease; /* Smooth color change on hover */
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #DAF1DE; /* Example hover color */
+  color: #DAF1DE; 
 }
-
-/* Sections (About, Projects, Contact) */
 section {
   padding: 4rem 2rem;
-  transition: opacity 0.5s ease-in-out; /* Add smooth transition for section visibility */
+  transition: opacity 0.5s ease-in-out; 
   text-align: center; 
 }
 
@@ -123,7 +205,7 @@ h2 {
 }
 
 footer {
-  background-color: #0B2B26;
+  background-color: #051F20;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
@@ -131,52 +213,25 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
-
-
-.profile{
-  width:125px;
-  height:125px;
-  display:inline;
-  float:left;
-  margin:10px;
+#projects p, h4{
+  color: #555;
 }
 #profile-description{
   display:block;
   text-align:left;
-  
+
 }
 #profile-title{
   display:block;
   text-align:left;
 }
 
-body {
-  background-image: url("https://source.unsplash.com/random/1920x1080/?technology,code"); /* Example background image */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Optional: Keep background fixed while scrolling */
-}
-
-/* Contact Section Icons */
 .icons{
   width:22px;
   height:22px;
   display:inline;
   margin:3px;
   transform: translateY(10px);
-}
-.icons2{
-  width:50px;
-  height:50px;
-  display:inline;
-  margin:3px;
-  transform: translateY(10px);
-}
-.info2{
-  display:inline-block;
-  text-align:left;
-  font-size: 1.2rem;
 }
 .info{
   display:inline;
@@ -188,14 +243,15 @@ body {
   display: inline-block;
   margin: 0 1rem;
   font-size: 1.5rem; 
-  color: #051F20;
+  color: #8EB69B;
   transition: color 0.3s ease, transform 0.3s ease; 
   cursor:pointer;
+  opacity: 0.3;
 }
 #snake:hover{
   color: #8EB69B;
+  opacity: 1;
 }
-/* Project Card Hover Effect */
 #projects .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -204,12 +260,10 @@ body {
   text-align:left;
   
 }
-/* Optional: Subtle animation for navigation elements on hover */
 nav a:hover {
-  transform: translateY(-2px); /* Example: Slight upward movement on hover */
+  transform: translateY(-2px); 
 }
 
-/* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
 }
@@ -218,7 +272,6 @@ nav a[href^="#"] {
   scroll-behavior: smooth; 
 }
 
-/* ... add more styles or customize existing ones as needed ... */
 #snake_feature{
   position: relative;
   top: 20px;
@@ -265,10 +318,20 @@ nav a[href^="#"] {
 
   }
 }
-@media (max-width: 356px){
+@media (max-width: 728px){
   .images{
     height: 150px;
     width: 256px;
 
   }
 } 
+@keyframes appear{
+  0%{
+    opacity: 0.1;
+    width: 40%;
+  }
+  100%{
+    opacity: 1;
+    width: 100%;
+  }
+}
