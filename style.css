@@ -1,5 +1,9 @@
-/* General Styling */
+*{
+  overflow-x: hidden;
+}
 body {
+  min-width: 128vh;
+  min-height: 100vh;
   font-family:sans-serif, 'Arial';
   margin: 0;
   padding: 0; 
@@ -7,12 +11,14 @@ body {
   line-height: 1.6;
   background: #000;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #about{
   background: url("images/profile.png");
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
   width: 80%;
   height: 500px;
   border-radius: 15px;
@@ -29,7 +35,6 @@ body {
   border-radius: 15px;
 }
 #unity{
-  position: sticky;
   width: 100%;
   height: 250px;
   background: url("images/unity.png");
@@ -90,8 +95,8 @@ body {
 .images{
   width:750px;
   height:450px;
-  display:inline;
-
+  display:inline-block;
+  align-self: center;
 }
 #projects_title{
   color: #DAF1DE;
@@ -118,12 +123,18 @@ body {
   display: none;
 }
 .slide{
-  position: relative;
-  width:750px;
+  display: flex;
+  width:100%;
   height:450px;
-  left:235px;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  scroll-behavior: none;
 }
-/* Project Section */
+.buttons{
+  justify-self: center;
+}
 #projects .project-card {
   background-color: #DAF1DE;
   border: 1px solid #ddd;
@@ -281,8 +292,6 @@ nav a[href^="#"] {
 .slide_buttons{
   background: #8EB69B;
   border: none;
-  margin-right:50px;
-  margin-left:50px;
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -320,19 +329,23 @@ nav a[href^="#"] {
   }
 }
 @media (max-width: 728px){
-  .images{
-    height: 150px;
+  #about{
+    height: 86px;
     width: 256px;
-
+    margin-right: 200px;
+  }
+  .images{
+    height: 86px;
+    width: 256px;
   }
 } 
 @keyframes appear{
   0%{
     opacity: 0.1;
-    width: 40%;
+    height: 10px;
   }
   100%{
     opacity: 1;
-    width: 100%;
+    height: 250px;
   }
 }
