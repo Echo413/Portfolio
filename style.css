@@ -1,9 +1,6 @@
-*{
-  overflow-x: hidden;
-}
 body {
-  min-width: 128vh;
-  min-height: 100vh;
+  min-width: 100vh;
+  max-width: 100%;
   font-family:sans-serif, 'Arial';
   margin: 0;
   padding: 0; 
@@ -14,16 +11,27 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about{
+  display: flex;
+  width: 100vh;
+  max-width: 100%;
+  height: 728px;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
 }
 #about{
   background: url("images/profile.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   width: 80%;
   height: 500px;
   border-radius: 15px;
-  margin-left: 100px;
-  margin-top: 125px;
 }
 #skills{
   position: relative;
@@ -303,37 +311,7 @@ nav a[href^="#"] {
   color: #DAF1DE;
   
 }
-
-@media (max-width: 256px) {
-  #about{
-    margin-top:75px;
-  }
-  nav ul {
-    text-align: left;
-  }
-  
-  nav li {
-    display: block; 
-    margin: 0.5rem 0;
-  }
-  #profile-title{
-    text-align:center;
-  }
-  #profile-description{
-    text-align:center;
-  }
-  .images{
-    height: 50px;
-    width: 256px;
-
-  }
-}
 @media (max-width: 728px){
-  #about{
-    height: 86px;
-    width: 256px;
-    margin-right: 200px;
-  }
   .images{
     height: 86px;
     width: 256px;
